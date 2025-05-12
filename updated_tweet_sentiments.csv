@@ -1,0 +1,52 @@
+,tweet,sentiment,tweet_id,likes,Sentiment
+0,The event starts at 5 PM.,neutral,1.0,200.0,neutral
+1,I hate how this turned out.,negative,2.0,325.0,negative
+2,Fantastic experience!,positive,3.0,9823.0,positive
+3,Fantastic experience!,positive,4.0,12987.0,positive
+4,This is the worst thing ever!,negative,5.0,17798.5,negative
+5,The event starts at 5 PM.,neutral,6.0,22584.4,neutral
+6,What a wonderful day!,positive,7.0,27370.3,positive
+7,Great job by the team!,positive,8.0,32156.2,positive
+8,What a wonderful day!,positive,9.0,36942.1,positive
+9,It ruined my whole day.,negative,10.0,41728.0,negative
+10,Just finished reading the article.,neutral,11.0,46513.9,neutral
+11,Today is Tuesday.,neutral,12.0,51299.8,neutral
+12,This is the worst thing ever!,negative,13.0,56085.7,negative
+13,I hate how this turned out.,negative,14.0,60871.6,negative
+14,Today is Tuesday.,neutral,15.0,65657.5,neutral
+15,What a wonderful day!,positive,16.0,70443.4,positive
+16,Really disappointed in the results.,negative,17.0,75229.3,negative
+17,I'm so happy about the news!,positive,18.0,80015.2,positive
+18,This update made my day!,positive,19.0,84801.1,positive
+19,The event starts at 5 PM.,neutral,20.0,89587.0,neutral
+20,I'm sick of this happening.,negative,21.0,94372.9,negative
+21,I'm so happy about the news!,positive,22.0,99158.8,positive
+22,This update made my day!,positive,23.0,103944.7,positive
+23,I'm sick of this happening.,negative,24.0,108730.6,negative
+24,Really disappointed in the results.,negative,25.0,113516.5,negative
+25,The event starts at 5 PM.,neutral,26.0,118302.4,neutral
+26,What a wonderful day!,positive,27.0,123088.3,positive
+27,This is the worst thing ever!,negative,28.0,127874.2,negative
+28,This is the worst thing ever!,negative,29.0,132660.1,negative
+29,I'm so happy about the news!,positive,30.0,137446.0,positive
+30,Today is Tuesday.,neutral,31.0,142231.9,neutral
+31,This update made my day!,positive,32.0,147017.8,positive
+32,This update made my day!,positive,33.0,151803.7,positive
+33,It ruined my whole day.,negative,34.0,156589.6,negative
+34,It’s cloudy outside.,neutral,35.0,161375.5,neutral
+35,It’s cloudy outside.,neutral,36.0,166161.4,neutral
+36,I hate how this turned out.,negative,37.0,170947.3,negative
+37,Today is Tuesday.,neutral,38.0,175733.2,neutral
+38,It ruined my whole day.,negative,39.0,180519.1,negative
+39,Just finished reading the article.,neutral,40.0,185305.0,neutral
+40,The event starts at 5 PM.,neutral,41.0,190090.9,neutral
+41,Absolutely loved this!,positive,42.0,194876.8,positive
+42,Such a terrible decision.,negative,43.0,199662.7,negative
+43,What a wonderful day!,positive,44.0,204448.6,positive
+44,I'm sick of this happening.,negative,45.0,209234.5,negative
+45,Really disappointed in the results.,negative,46.0,214020.4,negative
+46,I'm so happy about the news!,positive,47.0,218806.3,positive
+47,Fantastic experience!,positive,48.0,223592.2,positive
+48,Today is Tuesday.,neutral,49.0,228378.1,neutral
+49,Fantastic experience!,positive,50.0,233164.0,positive
+50,Today is Tuesday.,neutral,,,neutral
