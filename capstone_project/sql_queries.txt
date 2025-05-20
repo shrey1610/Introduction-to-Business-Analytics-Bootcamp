@@ -1,0 +1,105 @@
+
+
+CREATE TABLE Users (
+    UserID INT PRIMARY KEY AUTO_INCREMENT,
+    TotalSpent DECIMAL(10,2),
+    Transactions INT,
+    AvgSpend DECIMAL(10,2)
+);
+
+CREATE TABLE Merchants (
+    MerchantID INT PRIMARY KEY AUTO_INCREMENT,
+    MerchantName VARCHAR(50),
+    Recurring VARCHAR(3)
+);
+
+CREATE TABLE TaxRates (
+    TaxID INT PRIMARY KEY AUTO_INCREMENT,
+    TaxRate DECIMAL(5,3),
+    Amount DECIMAL(10,2),
+    TotalAmount DECIMAL(10,2),
+    Regular VARCHAR(3),
+    AmountLevel VARCHAR(20)
+);
+
+CREATE TABLE Expenses (
+    ExpenseID INT PRIMARY KEY AUTO_INCREMENT,
+    Date DATE,
+    Amount DECIMAL(10,2),
+    Category VARCHAR(50),
+    Payment_Method VARCHAR(50),
+    MerchantID INT,
+    TaxID INT,
+    UserID INT,
+    FOREIGN KEY (MerchantID) REFERENCES Merchants(MerchantID),
+    FOREIGN KEY (TaxID) REFERENCES TaxRates(TaxID),
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);
+
+
+INSERT INTO Users (TotalSpent, Transactions, AvgSpend) VALUES
+(35000, 34, 1029.41),
+(12000, 20, 600),
+(14500, 25, 580),
+(18000, 30, 600);
+
+INSERT INTO Merchants (MerchantName, Recurring) VALUES
+('Swiggy', 'No'),
+('Redbus', 'No'),
+('Amazon', 'No'),
+('ph pay', 'Yes'),
+('Flipkart', 'No'),
+('Zomato', 'No'),
+('Meesho', 'No'),
+('Hotstar', 'No');
+
+INSERT INTO TaxRates (TaxRate, Amount, TotalAmount, Regular, AmountLevel) VALUES
+(0.10, 450, 495, 'NO', 'Low'),
+(0.18, 5000, 5900, 'NO', 'High'),
+(0.12, 500, 560, 'NO', 'Medium'),
+(0.10, 850, 935, 'Yes', 'Medium'),
+(0.25, 1050, 1312.5, 'NO', 'Low'),
+(0.08, 950, 1026, 'NO', 'Low'),
+(0.18, 50, 59, 'Yes', 'Medium'),
+(0.30, 450, 585, 'NO', 'High');
+
+INSERT INTO Expenses (Date, Amount, Category, Payment_Method, MerchantID, TaxID, UserID) VALUES
+('2024-03-04', 450, 'Food', 'cash', 1, 1, 1),
+('2024-05-25', 5000, 'Travel', 'card', 2, 2, 1),
+('2024-06-18', 500, 'Entertainment', 'upi', 3, 3, 1),
+('2024-07-12', 850, 'Rent', 'wallet', 4, 4, 1),
+('2024-08-05', 1050, 'Shopping', 'cash', 5, 5, 1),
+('2024-08-29', 950, 'Bill', 'card', 4, 6, 1),
+('2024-09-22', 50, 'Food', 'upi', 6, 7, 1),
+('2024-10-16', 450, 'Shopping', 'wallet', 5, 8, 1),
+('2024-11-09', 1000, 'Travel', 'cash', 2, 2, 1),
+('2024-12-03', 100, 'Bill', 'card', 4, 6, 1),
+('2024-12-27', 650, 'Entertainment', 'upi', 3, 3, 1),
+('2025-01-20', 850, 'Bill', 'wallet', 4, 6, 1),
+('2025-02-13', 950, 'Rent', 'wallet', 4, 4, 1),
+('2025-03-09', 45, 'Food', 'card', 1, 1, 1),
+('2025-04-02', 25, 'Food', 'cash', 6, 7, 1),
+('2025-04-26', 990, 'Shopping', 'upi', 5, 5, 1),
+('2025-05-20', 650, 'Entertainment', 'upi', 3, 3, 1),
+('2025-06-13', 550, 'Shopping', 'wallet', 7, 5, 1),
+('2025-07-07', 600, 'Entertainment', 'cash', 8, 3, 1),
+('2025-07-31', 400, 'Food', 'card', 6, 7, 1),
+('2025-08-24', 300, 'Bill', 'upi', 4, 6, 1),
+('2025-09-17', 700, 'Entertainment', 'wallet', 8, 3, 1),
+('2025-10-11', 680, 'Shopping', 'wallet', 7, 5, 1),
+('2025-11-04', 900, 'Rent', 'card', 4, 4, 1),
+('2025-11-28', 470, 'Shopping', 'cash', 5, 5, 1),
+('2025-12-22', 350, 'Food', 'upi', 6, 7, 1),
+('2026-01-15', 233, 'Food', 'upi', 1, 1, 1),
+('2026-02-08', 280, 'Shopping', 'wallet', 3, 3, 1),
+('2026-03-04', 10035, 'Travel', 'card', 2, 2, 1),
+('2026-03-28', 325, 'Bill', 'upi', 4, 6, 1),
+('2026-04-21', 199, 'Food', 'cash', 1, 1, 1),
+('2026-05-15', 688, 'Entertainment', 'upi', 3, 3, 1),
+('2026-06-08', 20, 'Food', 'card', 1, 1, 1),
+('2026-07-02', 1000, 'Travel', 'cash', 2, 2, 1);
+
+SELECT * FROM Users;
+SELECT * FROM Merchants;
+SELECT * FROM TaxRates;
+SELECT * FROM Expenses;
